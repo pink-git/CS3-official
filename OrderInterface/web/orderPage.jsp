@@ -211,11 +211,11 @@
                 <span class="close">&times;</span>
             </div>
             <div class="modal-body">
-                <h3>Sorry its too late</h3>
+                <h3>Sorry it's too late</h3>
                 <h3>Please comeback tomorrow </h3>
             </div>
             <div class="modal-footer">
-                <h2>LAU PHAN</h2>
+                <h2>LẨU PHAN</h2>
             </div>
         </div>
     </div>
@@ -228,6 +228,7 @@
 
 <script>
     function displayTime() {
+        const CLOSE_TIME=22;
         let d = new Date();
         let h = d.getHours();
         let day = d.getDate();
@@ -253,7 +254,7 @@
                 radioButtons[i].style.background = 'red';
                 document.getElementById("label" + (i + 11)).style.background = '#ff4141';
             }
-            if  (h>=radioButtons.length-1){
+            if  (h>=CLOSE_TIME){
                 modal.style.display = "block";
             }
         }
